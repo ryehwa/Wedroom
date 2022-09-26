@@ -1,0 +1,258 @@
+/*
+    index.html 스타일시트 화면(style.css)
+    작성날짜 : 2022-08-20
+    작성자 : 김하나
+*/
+
+* {
+    margin:0px;
+    padding:0px;
+}
+.wrap {
+    width:1200px;
+    margin:0px auto;
+}
+
+/* 로고정렬 */
+.hd {
+    width:1200px;
+	height:100px;
+	top:0px;
+}
+.logo > a > img {
+    width:300px;
+    height:100px;
+    float:left;
+    left:123px;
+}
+/* 메뉴바 */
+ul {list-style-type:none;}
+a {text-decoration:none;}
+.menu {
+    position:relative;
+    float:left;
+    top:65px;
+}
+.menu > li {
+	position:relative;
+	float:left;
+	width:160px;
+	text-align:center;
+}
+.menu > li > a {
+    font-size:20px;
+	color:black;
+	font-weight:bold;
+}
+.menu > li > a {
+    font-size:20px;
+	color:black;
+	font-weight:bold;
+}
+.menu > li > a:after {
+    display:block;
+    width:100px;
+    content: '';
+    border-bottom: solid 4px #57D2C4;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    margin-left:30px;
+ }
+ .menu > li > a:hover:after {
+    transform: scaleX(1);
+ }
+
+ /* 메뉴 밑 이미지 */
+.imgs{
+    position:relative;
+    top:15px;
+    margin-left:20px;
+}
+.imgs img {
+    width:620px;
+	height:200px;
+}
+.room_btn {
+    background-color:#6E4606;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    border:0px;
+    width:135px;
+	height:33px;
+    border-radius:5px;
+    position:relative;
+    top:-2px;
+    left:-218px;
+}
+/* 로그인 */
+.login {
+    width:520px;
+	height:200px;
+    background-color:#F8F2C2;
+    position:relative;
+	float:right;
+    margin-right:20px;
+    top:-193px;
+    z-index:1000;
+}
+.nav2 > p {
+    text-align:center;
+    font-size:17px;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+input {
+    width:310px;
+    height:40px;
+    border:1px solid #D9D9D9;
+    margin:5px 32px;
+    font-size:17px;
+    padding-left:10px;
+}
+.login_btn {
+    background-color:#57D2C4;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    border:0px;
+    width:100px;
+	height:70px;
+    position:absolute;
+    top:65px;
+}
+.nav2 > a {
+    font-size:17px;
+    position:relative;
+    color:black;
+    top:-10px;
+}
+.text1 {
+    margin-left:70px;
+    margin-right:110px;
+}
+
+/* 추천쉐어룸 이미지슬라이드 */
+.shareroom {
+    position:absolute;
+    top:340px;
+    margin-left:20px;
+}
+.slider {
+    padding:0px 25px;
+}
+.slick-list { 
+    width:1120px;
+}
+.row {
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    top:-130px;
+    left:10px;
+}
+.room {
+    text-align:center;
+    margin:3px 20px;
+}
+.room > img {
+    width:250px;
+	height:180px;
+}
+/* 화살표 */
+.left_arrow {
+    position:absolute;
+    top:280px;
+    left:-30px;
+    font-size:30px;
+}
+.right_arrow {
+    position:absolute;
+    top:280px;
+    right:0px;
+    font-size:30px;
+}
+/* 롤링 공지사항 */
+.notice-board {
+    position:absolute;
+    top:640px;
+    margin-left:20px;
+}
+.rollingbanner{
+    position:relative;
+    width:1100px;
+    height:50px;
+    top:-60px;
+    left:50px;
+    font-size:20px;
+    letter-spacing:-1px;
+    padding:10px 15px;
+    box-sizing:border-box;
+    border:1px solid #D9D9D9;
+}
+/* 타이틀 */
+.rollingbanner > .title{
+    float:left;
+    padding-right:10px;
+}
+/* 롤링 배너 */
+.rollingbanner > .notice{
+    position:relative;
+    width:auto;
+    height:100%;
+    box-sizing:border-box;
+    overflow:hidden;
+}        
+.rolling ul{
+    list-style:none;
+}
+.rollingbanner li{
+    position:absolute;
+    top:-36px;
+    left:0;
+}
+/* 이전, 현재, 다음 롤링 배너 표시 */
+.rollingbanner li.prev{
+    top:36px;
+    transition:top 1.0s ease;
+}
+.rollingbanner li.current{
+    top:0;
+    transition:top 1.0s ease;
+}
+.rollingbanner li.next{
+    top:-36px;
+}
+.rollingbanner a{
+    display: block;
+    display: -webkit-box;
+    text-decoration: none;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    color: #000;
+}
+
+/* footer */
+.ft {
+    width:1200px;
+	height:140px;
+    background-color:#F8F2C2;
+    position:absolute;
+    top:750px;
+}
+.ft li {
+	position:relative;
+	float:left;
+	top:15px;
+    left:230px;
+    margin-left:1%;
+}
+.ft li > a {
+    color:black;
+}
+.p {
+    position:relative;
+    text-align:center;
+    top:20px;
+}

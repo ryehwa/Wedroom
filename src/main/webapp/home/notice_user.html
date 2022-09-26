@@ -1,0 +1,145 @@
+<!-- 
+notice.html (공지게시판 화면 구현)
+작성날짜:2022-09-12
+작성자:김례화
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WedRoom</title>
+    <link href="css/notice_user.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+    <div class="wrap">
+        <!-- 로고 -->
+        <header class="hd">
+            <div class="logo">
+                <a href="#"><img src="image/logo.png"></a>
+            </div>
+        </header>
+        <!-- 메뉴바 -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">쉐어하우스</a></li>
+                <li><a href="#">룸메이트</a></li>
+                <li><a href="#">자유게시판</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">성향테스트</a></li>
+            </ul>
+        </nav>
+        <!-- 공지게시판(본문) -->
+        <article class="noticeboard">
+            <p class="title">공지사항</p>
+            <div class="form-group">
+                <div class="form-select">
+                    <select id="searchSelect" title="검색 구분을 선택해 주세요">
+                        <option value="all">전체</option>
+                        <option value="title">제목</option>
+                        <option value="contents">내용</option>
+                    </select>
+                </div>
+                <div class="form-text">
+                    <input type="text" id="searchText" placeholder="검색어를 입력해 주세요.">
+                </div>
+                <button class="btn-regular" type="button" onclick="">조회</button>
+            </div>
+            <div class="board-list">
+                <div class="board-detail">
+                </div>
+                <div class="board">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <td>번호</td>
+                            <td class="td-title">제목</td>
+                            <td>작성일</td>
+                            <td>조회수</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>7</td>
+                            <td>공지사항입니다</td>
+                            <td>2022-09-12</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>공지사항입니다</td>
+                            <td>2022-09-12</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>공지사항입니다</td>
+                            <td>2022-09-12</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>공지사항입니다</td>
+                            <td>2022-09-12</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>공지사항입니다</td>
+                            <td>2022-09-12</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>공지사항입니다</td>
+                            <td>2022-09-12</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>공지사항입니다</td>
+                            <td>2022-09-12</td>
+                            <td>0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+            
+                    <div class="paging">
+                        <a href="#" onclick="" class="prev">이전페이지</a>
+                        <a href="#" onclick="" class="num">1</a>
+                        <a href="#" onclick="" class="num">2</a>
+                        <a href="#" onclick="" class="num">3</a>
+                        <a href="#" onclick="" class="num">4</a>
+                        <a href="#" onclick="" class="next">다음페이지</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 꼬리말 -->
+        <footer class="ft">
+            <nav class="nav2">
+                <ul>
+					<li><a href="#">서비스 이용약관</a></li>
+					<li class="l1">l</li>
+					<li><a href="#">개인정보처리 방침</a></li>
+					<li class="l1">l</li>
+					<li><a href="#">광고 문의</a></li>
+					<li class="l1">l</li>
+					<li><a href="#">고객서비스 센터</a></li>
+                    <li class="l1">l</li>
+					<li><a href="#">위치기반 서비스 이용약관</a></li>
+				</ul>
+            </nav>
+            <br>
+            <p class="p">
+                <a>상호 : (주)위드룸&nbsp;|&nbsp;주소 : 서울특별시 강남구 테헤란로1길 10&nbsp;|&nbsp;팩스 : 02-123-4567</a>
+                <br>
+                <a>서비스 이용문의 : 1234-9876&nbsp;|&nbsp;이메일 : cs@wedroom.com</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

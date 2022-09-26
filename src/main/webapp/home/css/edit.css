@@ -1,0 +1,63 @@
+/*
+    edti.html 스타일시트 화면(edit.css)
+    작성날짜 : 2022-09-12
+    작성자 : 김례화
+*/
+@charset "UTF-8";
+body {
+	min-height: 100vh;
+	background: -webkit-gradient(linear, left bottom, right top, from(#fff),
+		to(#F8F2C2));
+	background: -webkit-linear-gradient(bottom left, #fff 0%, #F8F2C2 100%);
+	background: -moz-linear-gradient(bottom left, #fff 0%, #F8F2C2 100%);
+	background: -o-linear-gradient(bottom left, #fff 0%, #F8F2C2 100%);
+	background: linear-gradient(to top right, #fff 0%, #F8F2C2 100%);
+}
+
+.container{
+position:relative;
+}
+.validation-form{
+position:relative;
+left:17%;
+}
+
+.input-form {
+	max-width: 680px;
+	margin-top: 80px;
+	padding: 32px;
+	background: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+#id {
+	width: 50px;
+	background-color: #57D2C4;
+}
+
+
+#logo {
+	width: 300px;
+	margin: auto;
+	display: block;
+}
+
+#gendercheck {
+	width: 100%;
+	display:block;
+	margin:0% 11%;
+}
+
+#gendercheck > label {
+font-size:18px;
+}
+
+/*input type="number"의 화살표 버튼 없애기*/
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}

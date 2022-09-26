@@ -1,0 +1,199 @@
+/*
+    board.html 스타일시트 화면(board.css)
+    작성날짜 : 2022-08-31
+    작성자 : 김하나
+*/
+* {
+    margin:0px;
+    padding:0px;
+}
+.wrap {
+    width:1200px;
+    margin:0px auto;
+}
+/* 로고정렬 */
+.hd {
+    width:1200px;
+	height:100px;
+	top:0px;
+}
+.logo > a > img {
+    width:300px;
+    height:100px;
+    float:left;
+    left:123px;
+}
+/* 메뉴바 */
+ul {list-style-type:none;}
+a {text-decoration:none;}
+.menu {
+    position:relative;
+    float:left;
+	left:290px;
+    top:-35px;
+}
+.menu > li {
+	position:relative;
+	float:left;
+	width:160px;
+	text-align:center;
+}
+.menu > li > a {
+    font-size:20px;
+	color:black;
+	font-weight:bold;
+}
+.menu > li > a:after {
+    display:block;
+    width:100px;
+    content: '';
+    border-bottom: solid 4px #57D2C4;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    margin-left:30px;
+ }
+ .menu > li > a:hover:after {
+    transform: scaleX(1);
+ }
+ /* 자유게시판 */
+.freeboard > p {
+    position:relative;
+    font-size:30px;
+    left:-750px;
+    top:20px;
+}
+.board_control {
+    position:relative;
+    left:1030px;
+}
+.board {
+    position:relative;
+    margin-top:10px;
+    margin-left:30px;
+}
+.table {
+    border-collapse:collapse;
+    margin-bottom:40px;
+}
+table td {
+    height:40px;
+    width:120px;
+    padding:10px;
+}
+thead td {
+    padding:10px;
+    font-weight:bold;
+    border-top:none;
+    border-top:2px solid black;
+    border-bottom:1px solid #D9D9D9;
+}
+.td-title {
+    width:650px;
+}
+.td-content {
+    height:auto;
+    padding:25px 15px;
+    border-bottom:1px solid #D9D9D9;
+}
+.btn {
+    text-align:center;
+}
+.btn_list {
+    display:inline-block;
+    width:90px;
+    height:40px;
+    background-color:#FFFFFF;
+    border-radius:10px;
+    border:1px solid #D9D9D9;
+}
+/* 댓글 */
+.board_comment {
+    position:relative;
+    height:auto;
+}
+.comment {
+    position:relative;
+    margin:30px auto;
+}
+.count {
+    position:relative;
+    left:110px;
+}
+.text {
+    text-align:center;
+    width:1000px;
+    margin:10px;
+}
+#comment {
+    width:80%;
+    height:50px;
+    resize:none;
+    font-size:16px;
+    padding:3px 5px;
+}
+.btn_review {
+    position:absolute;
+    width:90px;
+    height:57px;
+    border:1px solid #D9D9D9;
+    margin-left:10px;
+}
+.comment-review {
+    position:relative;
+    left:75px;
+    width:100%;
+}
+.comment-table {
+    border-top:1px dashed #D9D9D9;
+    border-bottom:1px dashed #D9D9D9;
+    width:1000px;
+    padding-bottom:40px;
+}
+.comment-table td {
+    height:30px;
+    width:auto;
+    padding:0px;
+}
+.date {
+    color:#666;
+    font-size:13px;
+}
+.btn-update {
+    position:absolute;
+    top:100px;
+    border:1px solid #D9D9D9;
+    height:25px;
+    width:35px;
+}
+.btn-delete {
+    position:absolute;
+    top:100px;
+    left:40px;
+    border:1px solid #D9D9D9;
+    height:25px;
+    width:35px;
+}
+
+/* footer */
+.ft {
+    width:1200px;
+	height:140px;
+    background-color:#F8F2C2;
+    position:relative;  
+    top:70px;
+ }
+ .nav2 li {
+	position:relative;
+	float:left;
+	top:25px;
+    left:230px;
+    margin-left:1%;
+}
+.nav2 li > a {
+    color:black;
+}
+.p {
+    position:relative;
+    text-align:center;
+    top:30px;
+}

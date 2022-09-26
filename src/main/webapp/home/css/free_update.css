@@ -1,0 +1,151 @@
+/*
+    board_write.html 스타일시트 화면(board_write.css)
+    작성날짜 : 2022-09-01
+    작성자 : 김하나
+*/
+* {
+    margin:0px;
+    padding:0px;
+}
+.wrap {
+    width:1200px;
+    margin:0px auto;
+}
+/* 로고정렬 */
+.hd {
+    width:1200px;
+	height:100px;
+	top:0px;
+}
+.logo > a > img {
+    width:300px;
+    height:100px;
+    float:left;
+    left:123px;
+}
+/* 메뉴바 */
+ul {list-style-type:none;}
+a {text-decoration:none;}
+.menu {
+    position:relative;
+    float:left;
+	left:290px;
+    top:-35px;
+}
+.menu > li {
+	position:relative;
+	float:left;
+	width:160px;
+	text-align:center;
+}
+.menu > li > a {
+    font-size:20px;
+	color:black;
+	font-weight:bold;
+}
+.menu > li > a:after {
+    display:block;
+    width:100px;
+    content: '';
+    border-bottom: solid 4px #57D2C4;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    margin-left:30px;
+ }
+ .menu > li > a:hover:after {
+    transform: scaleX(1);
+ }
+/* 게시글 작성 */
+.board_update > p {
+    position:relative;
+    font-size:30px;
+    left:-750px;
+    top:20px;
+}
+.board_update {
+    position:relative;
+}
+.update {
+    border-top:2px solid black;
+    border-bottom:1px solid #D9D9D9;
+    width:1100px;
+    margin:30px auto;
+    padding-bottom:40px;
+}
+table td {
+    height:40px;
+    width:120px;
+    padding:15px 10px;
+    vertical-align:top;
+}
+.board-title {
+    border:1px solid #D9D9D9;
+    height:40px;
+    width:600px;
+    padding:5px 10px;
+}
+.msg {
+    color:red;
+    position:relative;
+    top:200px;
+    left:260px;
+}
+.board-content {
+    resize:none;
+    border:1px solid #D9D9D9;
+    width:600px;
+    padding:10px;
+}
+.msg2 {
+    color:red;
+    position:relative;
+    top:555px;
+    left:105px;
+}
+.btn-write {
+    text-align:center;
+}
+.btn-cancel {
+    display:inline-block;
+    width:200px;
+    height:40px;
+    background-color:#FFFFFF;
+    border-radius:10px;
+    border:1px solid #D9D9D9;
+    margin-top:30px;
+}
+.btn-update {
+    display:inline-block;
+    width:200px;
+    height:40px;
+    color:#FFFFFF;
+    background-color:#57D2C4;
+    border-radius:10px;
+    border:1px solid #57D2C4;
+    margin-top:30px;
+}
+
+
+  /* footer */
+.ft {
+    width:1200px;
+	height:140px;
+    background-color:#F8F2C2;
+    position: absolute;  
+    top:890px;
+ }
+ .nav2 li {
+	position:relative;
+	float:left;
+	top:25px;
+    left:230px;
+    margin-left:1%;
+}
+.nav2 li > a {
+    color:black;
+}
+.p {
+    position:relative;
+    text-align:center;
+    top:30px;
+}
